@@ -1,0 +1,3136 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/28/2021 11:50:42 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-8THTS28"
+  DTS:CreatorName="DESKTOP-8THTS28\Dell"
+  DTS:DTSID="{D6ADC8DB-5498-4560-BCE0-02D3EDFCE1C3}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.1601.5"
+  DTS:LocaleID="2057"
+  DTS:MaxErrorCount="5"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{73A74B14-79EB-49A7-8453-6E59F8BB2E5F}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[DESKTOP-8THTS28.VedioGames_Stg]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{440F9741-A64C-4E3A-B755-63BFED5C0BC9}"
+      DTS:ObjectName="DESKTOP-8THTS28.VedioGames_Stg">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=DESKTOP-8THTS28;Initial Catalog=VedioGames_Stg;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{18FEEBDF-EFBB-4AD6-8C9D-CE080C6C037A}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Higest_Userscore_tbl.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{6F358CC7-3EA8-4193-B326-A46A8A423A60}"
+      DTS:ObjectName="Excel Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\RatingNew_tbl.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 10]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{745829D7-44EE-497F-9D36-0C552148AD96}"
+      DTS:ObjectName="Excel Connection Manager 10">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\RatingNew_tbl.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 11]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{9EF6EAFC-D28F-4D15-B9D8-2CD41344F730}"
+      DTS:ObjectName="Excel Connection Manager 11">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Higest_Userscore_tbl.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 12]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{446F7065-BA2C-495B-B74C-A5A644AEA81A}"
+      DTS:ObjectName="Excel Connection Manager 12">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\RatingNew_tbl.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 13]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{B2E769BA-4966-4966-831C-CC2A5FAB4075}"
+      DTS:ObjectName="Excel Connection Manager 13">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Sales_New.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{7AE98782-DE88-462E-ACAE-CF9459E18138}"
+      DTS:ObjectName="Excel Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Rating_tbl.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{17B366FF-9533-405F-B08F-0BA636E40FA3}"
+      DTS:ObjectName="Excel Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Sales_tbl.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{7F533286-716E-4B41-9F51-BE7719EA0BB5}"
+      DTS:ObjectName="Excel Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Sales_tbl.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 5]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{AC723754-5B3C-44A7-9222-57D70134B0F3}"
+      DTS:ObjectName="Excel Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Sales_tbl.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 6]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{E115AA4D-8FC1-4516-B43C-BA39A37BFE22}"
+      DTS:ObjectName="Excel Connection Manager 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Developer_tbl.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 7]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{6164C4E3-188C-495D-BE35-B4FFF147842B}"
+      DTS:ObjectName="Excel Connection Manager 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Developer_tbl.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 8]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{D1E8F6AA-3721-4727-91C2-08D7AD656550}"
+      DTS:ObjectName="Excel Connection Manager 8">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Sales_tbl.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 9]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{5CE46CFD-047C-42D9-B801-93B6BBAF6836}"
+      DTS:ObjectName="Excel Connection Manager 9">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Game_tbl.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{17A0A316-35CD-492B-B599-E668CB6C1F22}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Developer_tbl.prn">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Devloper_ID         Game_Name                                              D_Name                               Publisher_Name"
+              DTS:DTSID="{FDB63B50-535B-4551-A9C8-B7873059829F}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{5DDB3AE1-1CBB-4381-AD3E-267ED36B0D5B}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Developer_tbl.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Devloper_ID"
+              DTS:DTSID="{510B0B0F-BA1A-45D9-87C1-355632C011DC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Game_Name"
+              DTS:DTSID="{6E68B397-7401-4A30-B184-66AAAE727B23}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_Name"
+              DTS:DTSID="{76E04E19-1D1B-4172-82BD-0400674091FA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Publisher_Name"
+              DTS:DTSID="{37CAE887-EB70-47D9-BACF-D20969888F04}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{B95C55A5-3CAC-4954-A556-C21A009C930F}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Developer_tbl.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Devloper_ID"
+              DTS:DTSID="{257998FC-40FF-4F6E-933D-6A7450795173}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Game_Name"
+              DTS:DTSID="{9EBB96EB-CB8A-46DC-95CE-01A81BE60E47}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_Name"
+              DTS:DTSID="{6ABED891-82C0-4804-93B6-0142393D9E91}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Publisher_Name"
+              DTS:DTSID="{33EF9884-B86F-4A44-9B64-3353747E64B5}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{3FB95392-8081-4DD0-9E53-D681B73A11A7}"
+      DTS:ObjectName="Flat File Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Dell\Desktop\DWBI_Assignmnet_Staging tbl\Developer_tbl.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Devloper_ID"
+              DTS:DTSID="{B0E792E1-A378-49AF-83DB-7A3F2F3CAA67}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="150"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Game_Name"
+              DTS:DTSID="{CAA86072-F2F1-4BE2-8F44-7A4A8F963302}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x0009_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="D_Name"
+              DTS:DTSID="{DB978D5C-FED6-4FED-9B02-8B20C5BAC9A2}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Publisher_Name"
+              DTS:DTSID="{CE1A4C93-8CE8-4AC5-A6DB-50BDF71DF0B9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Developer_stg tbl"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4C12D2F6-937F-4BE3-A709-961E500B7571}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Developer_stg tbl"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:EventHandlers>
+        <DTS:EventHandler
+          DTS:refId="Package\Developer_stg tbl.EventHandlers[OnPreExecute]"
+          DTS:CreationName="OnPreExecute"
+          DTS:DTSID="{2ECB4609-AF18-443F-AB4E-DC4876DF6F99}"
+          DTS:EventID="0"
+          DTS:EventName="OnPreExecute"
+          DTS:LocaleID="-1">
+          <DTS:Variables>
+            <DTS:Variable
+              DTS:CreationName=""
+              DTS:Description="The propagate property of the event"
+              DTS:DTSID="{AB11CE64-4F13-4936-B368-DDB1BE13A485}"
+              DTS:IncludeInDebugDump="6789"
+              DTS:Namespace="System"
+              DTS:ObjectName="Propagate">
+              <DTS:VariableValue
+                DTS:DataType="11">-1</DTS:VariableValue>
+            </DTS:Variable>
+          </DTS:Variables>
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Developer_stg tbl.EventHandlers[OnPreExecute]\truncate_developer"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{5B214E05-A400-4487-8EBE-49AEEF334346}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="truncate_developer"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{440F9741-A64C-4E3A-B755-63BFED5C0BC9}"
+                  SQLTask:SqlStatementSource="truncate table [dbo].[developer]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:EventHandler>
+      </DTS:EventHandlers>
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Developer_stg tbl\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="2057"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Developer_stg tbl\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Devloper_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Devloper_ID]"
+                      length="100"
+                      lineageId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Devloper_ID]"
+                      name="Devloper_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Game_Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Game_Name]"
+                      length="150"
+                      lineageId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Game_Name]"
+                      name="Game_Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].Columns[D_Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[D_Name]"
+                      length="100"
+                      lineageId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].Columns[D_Name]"
+                      name="D_Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Publisher_Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Publisher_Name]"
+                      length="100"
+                      lineageId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Publisher_Name]"
+                      name="Publisher_Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Devloper_ID]"
+                      dataType="wstr"
+                      length="100"
+                      name="Devloper_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Game_Name]"
+                      dataType="wstr"
+                      length="150"
+                      name="Game_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[D_Name]"
+                      dataType="wstr"
+                      length="100"
+                      name="D_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Publisher_Name]"
+                      dataType="wstr"
+                      length="100"
+                      name="Publisher_Name" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Developer_stg tbl\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[developer]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Developer_stg tbl\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-8THTS28.VedioGames_Stg]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-8THTS28.VedioGames_Stg]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Devloper_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Devloper_ID"
+                      externalMetadataColumnId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Devloper_ID]"
+                      lineageId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Devloper_ID]" />
+                    <inputColumn
+                      refId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Game_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="150"
+                      cachedName="Game_Name"
+                      externalMetadataColumnId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Game_Name]"
+                      lineageId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Game_Name]" />
+                    <inputColumn
+                      refId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[D_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="D_Name"
+                      externalMetadataColumnId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[D_Name]"
+                      lineageId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].Columns[D_Name]" />
+                    <inputColumn
+                      refId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Publisher_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Publisher_Name"
+                      externalMetadataColumnId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Publisher_Name]"
+                      lineageId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output].Columns[Publisher_Name]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Devloper_ID]"
+                      dataType="wstr"
+                      length="100"
+                      name="Devloper_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Game_Name]"
+                      dataType="wstr"
+                      length="150"
+                      name="Game_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[D_Name]"
+                      dataType="wstr"
+                      length="100"
+                      name="D_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Publisher_Name]"
+                      dataType="wstr"
+                      length="100"
+                      name="Publisher_Name" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Developer_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Developer_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Developer_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Developer_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Developer_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Developer_stg tbl.Paths[Flat File Source Output]"
+              endId="Package\Developer_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Developer_stg tbl\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Games_stg tbl new"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{BCCBE039-BC73-4083-A1C7-3AED3961097F}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Games_stg tbl new"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:EventHandlers>
+        <DTS:EventHandler
+          DTS:refId="Package\Games_stg tbl new.EventHandlers[OnPreExecute]"
+          DTS:CreationName="OnPreExecute"
+          DTS:DTSID="{CB0CE79F-DC76-4A62-9218-F8742B5B22E9}"
+          DTS:EventID="0"
+          DTS:EventName="OnPreExecute"
+          DTS:LocaleID="-1">
+          <DTS:Variables>
+            <DTS:Variable
+              DTS:CreationName=""
+              DTS:Description="The propagate property of the event"
+              DTS:DTSID="{BFE345D4-6FF0-40DB-B03E-C2B99D6D03F6}"
+              DTS:IncludeInDebugDump="6789"
+              DTS:Namespace="System"
+              DTS:ObjectName="Propagate">
+              <DTS:VariableValue
+                DTS:DataType="11">-1</DTS:VariableValue>
+            </DTS:Variable>
+          </DTS:Variables>
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Games_stg tbl new.EventHandlers[OnPreExecute]\Truncate Games tbl"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{CBCFDCC2-E4ED-48C9-954D-696BDBD24739}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Truncate Games tbl"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{440F9741-A64C-4E3A-B755-63BFED5C0BC9}"
+                  SQLTask:SqlStatementSource="truncate table [dbo].[GamesNew_stg]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:EventHandler>
+      </DTS:EventHandlers>
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Games_stg tbl new\Excel Source"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Game_tbl$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Games_stg tbl new\Excel Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 9]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 9]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Game_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].ExternalColumns[Game_ID]"
+                      length="255"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Game_ID]"
+                      name="Game_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].ExternalColumns[Name]"
+                      length="255"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Genre]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].ExternalColumns[Genre]"
+                      length="255"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Genre]"
+                      name="Genre"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Platform]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].ExternalColumns[Platform]"
+                      length="255"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Platform]"
+                      name="Platform"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Year]"
+                      dataType="date"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].ExternalColumns[Year]"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Year]"
+                      name="Year"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].ExternalColumns[Game_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Game_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].ExternalColumns[Genre]"
+                      dataType="wstr"
+                      length="255"
+                      name="Genre" />
+                    <externalMetadataColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].ExternalColumns[Platform]"
+                      dataType="wstr"
+                      length="255"
+                      name="Platform" />
+                    <externalMetadataColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].ExternalColumns[Year]"
+                      dataType="date"
+                      name="Year" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[Game_ID]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[Game_ID]"
+                      name="Game_ID" />
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[Name]"
+                      name="Name" />
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[Genre]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[Genre]"
+                      name="Genre" />
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[Platform]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[Platform]"
+                      name="Platform" />
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[Year]"
+                      dataType="date"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[Year]"
+                      name="Year" />
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Games_stg tbl new\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[GamesNew_stg]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Games_stg tbl new\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-8THTS28.VedioGames_Stg]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-8THTS28.VedioGames_Stg]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Game_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Game_ID"
+                      externalMetadataColumnId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Game_ID]"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Game_ID]" />
+                    <inputColumn
+                      refId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Genre]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Genre"
+                      externalMetadataColumnId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Genre]"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Genre]" />
+                    <inputColumn
+                      refId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Platform]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Platform"
+                      externalMetadataColumnId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Platform]"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Platform]" />
+                    <inputColumn
+                      refId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Year]"
+                      cachedDataType="date"
+                      cachedName="Year"
+                      externalMetadataColumnId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      lineageId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output].Columns[Year]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Game_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Game_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Genre]"
+                      dataType="wstr"
+                      length="255"
+                      name="Genre" />
+                    <externalMetadataColumn
+                      refId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Platform]"
+                      dataType="wstr"
+                      length="255"
+                      name="Platform" />
+                    <externalMetadataColumn
+                      refId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Year]"
+                      dataType="dbTimeStamp"
+                      name="Year" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Games_stg tbl new\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Games_stg tbl new\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Games_stg tbl new\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Games_stg tbl new\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Games_stg tbl new.Paths[Excel Source Output]"
+              endId="Package\Games_stg tbl new\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Games_stg tbl new\Excel Source.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Higest_score stg tbl"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D8583968-67BB-4A00-BB15-7005E14B5D44}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Higest_score stg tbl"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:EventHandlers>
+        <DTS:EventHandler
+          DTS:refId="Package\Higest_score stg tbl.EventHandlers[OnPreExecute]"
+          DTS:CreationName="OnPreExecute"
+          DTS:DTSID="{7C8085F7-895A-4D1E-AF51-CA53CFC8802A}"
+          DTS:EventID="0"
+          DTS:EventName="OnPreExecute"
+          DTS:LocaleID="-1">
+          <DTS:Variables>
+            <DTS:Variable
+              DTS:CreationName=""
+              DTS:Description="The propagate property of the event"
+              DTS:DTSID="{C2D83A71-BAD8-4C3A-A8FF-9D84067BC948}"
+              DTS:IncludeInDebugDump="6789"
+              DTS:Namespace="System"
+              DTS:ObjectName="Propagate">
+              <DTS:VariableValue
+                DTS:DataType="11">-1</DTS:VariableValue>
+            </DTS:Variable>
+          </DTS:Variables>
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Higest_score stg tbl.EventHandlers[OnPreExecute]\Truncate Higest_score tbl"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{9E6A29B8-14B0-4B12-B227-FE0BA31E3AF1}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Truncate Higest_score tbl"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{440F9741-A64C-4E3A-B755-63BFED5C0BC9}"
+                  SQLTask:SqlStatementSource="truncate table [dbo].[Highest_Score]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:EventHandler>
+      </DTS:EventHandlers>
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Higest_score stg tbl\Excel Source"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Higest_Userscore_tbl$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Higest_score stg tbl\Excel Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 11]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 11]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].Columns[User_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[User_ID]"
+                      length="255"
+                      lineageId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].Columns[User_ID]"
+                      name="User_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Game_Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Game_Name]"
+                      length="255"
+                      lineageId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Game_Name]"
+                      name="Game_Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Higest_Score]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Higest_Score]"
+                      lineageId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Higest_Score]"
+                      name="Higest_Score"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[User_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="User_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Game_Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Game_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Higest_Score]"
+                      dataType="r8"
+                      name="Higest_Score" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[User_ID]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[User_ID]"
+                      name="User_ID" />
+                    <outputColumn
+                      refId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Game_Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Game_Name]"
+                      name="Game_Name" />
+                    <outputColumn
+                      refId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Higest_Score]"
+                      dataType="r8"
+                      lineageId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Higest_Score]"
+                      name="Higest_Score" />
+                    <outputColumn
+                      refId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Higest_score stg tbl\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Higest_scoreStg]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Higest_score stg tbl\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-8THTS28.VedioGames_Stg]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-8THTS28.VedioGames_Stg]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Higest_score stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Higest_score stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[User_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="User_ID"
+                      externalMetadataColumnId="Package\Higest_score stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[User_ID]"
+                      lineageId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].Columns[User_ID]" />
+                    <inputColumn
+                      refId="Package\Higest_score stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Game_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Game_Name"
+                      externalMetadataColumnId="Package\Higest_score stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Game_Name]"
+                      lineageId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Game_Name]" />
+                    <inputColumn
+                      refId="Package\Higest_score stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Higest_Score]"
+                      cachedDataType="r8"
+                      cachedName="Higest_Score"
+                      externalMetadataColumnId="Package\Higest_score stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Higest_Score]"
+                      lineageId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Higest_Score]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Higest_score stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[User_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="User_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Higest_score stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Game_Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Game_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Higest_score stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Higest_Score]"
+                      dataType="r8"
+                      name="Higest_Score" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Higest_score stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Higest_score stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Higest_score stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Higest_score stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Higest_score stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Higest_score stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Higest_score stg tbl.Paths[Excel Source Output]"
+              endId="Package\Higest_score stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Higest_score stg tbl\Excel Source.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Rating_stg tbl"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{CB7479E5-5151-432A-A4A6-6FE0275EECA0}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Rating_stg tbl"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:EventHandlers>
+        <DTS:EventHandler
+          DTS:refId="Package\Rating_stg tbl.EventHandlers[OnPreExecute]"
+          DTS:CreationName="OnPreExecute"
+          DTS:DTSID="{41B9BDE2-4EB9-4B18-BE0B-BAE0AD433412}"
+          DTS:EventID="74"
+          DTS:EventName="OnPreExecute"
+          DTS:LocaleID="-1">
+          <DTS:Variables>
+            <DTS:Variable
+              DTS:CreationName=""
+              DTS:Description="The propagate property of the event"
+              DTS:DTSID="{213A5CCE-C8E7-4713-95CC-D0EABEF401E7}"
+              DTS:IncludeInDebugDump="6789"
+              DTS:Namespace="System"
+              DTS:ObjectName="Propagate">
+              <DTS:VariableValue
+                DTS:DataType="11">-1</DTS:VariableValue>
+            </DTS:Variable>
+          </DTS:Variables>
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Rating_stg tbl.EventHandlers[OnPreExecute]\truncate Rating"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{71BDD458-950A-4050-9D0B-DCA848C49FCA}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="truncate Rating"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{440F9741-A64C-4E3A-B755-63BFED5C0BC9}"
+                  SQLTask:SqlStatementSource="truncate table [dbo].[Rating_stg]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:EventHandler>
+      </DTS:EventHandlers>
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Rating_stg tbl\Excel Source"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Rating_tbl$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Rating_stg tbl\Excel Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 12]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 12]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Rating_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Rating_ID]"
+                      length="255"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Rating_ID]"
+                      name="Rating_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Game_Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Game_Name]"
+                      length="255"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Game_Name]"
+                      name="Game_Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[rating_score]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[rating_score]"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[rating_score]"
+                      name="rating_score"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[ESRB_Rating]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[ESRB_Rating]"
+                      length="255"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[ESRB_Rating]"
+                      name="ESRB_Rating"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Rating_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Rating_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Game_Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Game_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[rating_score]"
+                      dataType="r8"
+                      name="rating_score" />
+                    <externalMetadataColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[ESRB_Rating]"
+                      dataType="wstr"
+                      length="255"
+                      name="ESRB_Rating" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Rating_ID]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Rating_ID]"
+                      name="Rating_ID" />
+                    <outputColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Game_Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Game_Name]"
+                      name="Game_Name" />
+                    <outputColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[rating_score]"
+                      dataType="r8"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[rating_score]"
+                      name="rating_score" />
+                    <outputColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ESRB_Rating]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ESRB_Rating]"
+                      name="ESRB_Rating" />
+                    <outputColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Rating_stg tbl\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[RatingsStg]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Rating_stg tbl\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-8THTS28.VedioGames_Stg]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-8THTS28.VedioGames_Stg]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Rating_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Rating_ID"
+                      externalMetadataColumnId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rating_ID]"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Rating_ID]" />
+                    <inputColumn
+                      refId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Game_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Game_Name"
+                      externalMetadataColumnId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Game_Name]"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Game_Name]" />
+                    <inputColumn
+                      refId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[rating_score]"
+                      cachedDataType="r8"
+                      cachedName="rating_score"
+                      externalMetadataColumnId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[rating_score]"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[rating_score]" />
+                    <inputColumn
+                      refId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ESRB_Rating]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="ESRB_Rating"
+                      externalMetadataColumnId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ESRB_Rating]"
+                      lineageId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[ESRB_Rating]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rating_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Rating_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Game_Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Game_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[rating_score]"
+                      dataType="r8"
+                      name="rating_score" />
+                    <externalMetadataColumn
+                      refId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ESRB_Rating]"
+                      dataType="wstr"
+                      length="255"
+                      name="ESRB_Rating" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Rating_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Rating_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Rating_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Rating_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Rating_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Rating_stg tbl.Paths[Excel Source Output]"
+              endId="Package\Rating_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Rating_stg tbl\Excel Source.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sales_stg tbl"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{50ACA4F7-32F0-4A4A-9C1E-1A81B9919614}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sales_stg tbl"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:EventHandlers>
+        <DTS:EventHandler
+          DTS:refId="Package\Sales_stg tbl.EventHandlers[OnPreExecute]"
+          DTS:CreationName="OnPreExecute"
+          DTS:DTSID="{AAD92A4D-6ABC-4199-9D64-51E45ED3D833}"
+          DTS:EventID="0"
+          DTS:EventName="OnPreExecute"
+          DTS:LocaleID="-1">
+          <DTS:Variables>
+            <DTS:Variable
+              DTS:CreationName=""
+              DTS:Description="The propagate property of the event"
+              DTS:DTSID="{952862D5-1F89-438A-9271-0D84DF551162}"
+              DTS:IncludeInDebugDump="6789"
+              DTS:Namespace="System"
+              DTS:ObjectName="Propagate">
+              <DTS:VariableValue
+                DTS:DataType="11">-1</DTS:VariableValue>
+            </DTS:Variable>
+          </DTS:Variables>
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Sales_stg tbl.EventHandlers[OnPreExecute]\Truncate_sales"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{417634CC-AACC-4B6C-8706-6F3F18BF2A06}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Truncate_sales"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{440F9741-A64C-4E3A-B755-63BFED5C0BC9}"
+                  SQLTask:SqlStatementSource="truncate table [dbo].[Sales_stg]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:EventHandler>
+      </DTS:EventHandlers>
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Sales_stg tbl\Excel Source"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sales_tbl$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Sales_stg tbl\Excel Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 13]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 13]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Sales_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Sales_ID]"
+                      length="255"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Sales_ID]"
+                      name="Sales_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Game_Name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Game_Name]"
+                      length="255"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Game_Name]"
+                      name="Game_Name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Total_Shipped]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Total_Shipped]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Total_Shipped]"
+                      name="Total_Shipped"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Global_Sales]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Global_Sales]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Global_Sales]"
+                      name="Global_Sales"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[NA_Sales]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[NA_Sales]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[NA_Sales]"
+                      name="NA_Sales"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[PAL_Sales]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[PAL_Sales]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[PAL_Sales]"
+                      name="PAL_Sales"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[JP_Sales]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[JP_Sales]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[JP_Sales]"
+                      name="JP_Sales"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Other_Sales]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Other_Sales]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Other_Sales]"
+                      name="Other_Sales"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Game_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Game_ID]"
+                      length="255"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Game_ID]"
+                      name="Game_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Developer_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Developer_ID]"
+                      length="255"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Developer_ID]"
+                      name="Developer_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Rating_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Rating_ID]"
+                      length="255"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Rating_ID]"
+                      name="Rating_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[User_ID]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[User_ID]"
+                      length="255"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[User_ID]"
+                      name="User_ID"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Sales_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Sales_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Game_Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Game_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Total_Shipped]"
+                      dataType="r8"
+                      name="Total_Shipped" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Global_Sales]"
+                      dataType="r8"
+                      name="Global_Sales" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[NA_Sales]"
+                      dataType="r8"
+                      name="NA_Sales" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[PAL_Sales]"
+                      dataType="r8"
+                      name="PAL_Sales" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[JP_Sales]"
+                      dataType="r8"
+                      name="JP_Sales" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Other_Sales]"
+                      dataType="r8"
+                      name="Other_Sales" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Game_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Game_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Developer_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Developer_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[Rating_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Rating_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].ExternalColumns[User_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="User_ID" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Sales_ID]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Sales_ID]"
+                      name="Sales_ID" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Game_Name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Game_Name]"
+                      name="Game_Name" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Total_Shipped]"
+                      dataType="r8"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Total_Shipped]"
+                      name="Total_Shipped" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Global_Sales]"
+                      dataType="r8"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Global_Sales]"
+                      name="Global_Sales" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[NA_Sales]"
+                      dataType="r8"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[NA_Sales]"
+                      name="NA_Sales" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[PAL_Sales]"
+                      dataType="r8"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[PAL_Sales]"
+                      name="PAL_Sales" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[JP_Sales]"
+                      dataType="r8"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[JP_Sales]"
+                      name="JP_Sales" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Other_Sales]"
+                      dataType="r8"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Other_Sales]"
+                      name="Other_Sales" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Game_ID]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Game_ID]"
+                      name="Game_ID" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Developer_ID]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Developer_ID]"
+                      name="Developer_ID" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Rating_ID]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[Rating_ID]"
+                      name="Rating_ID" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[User_ID]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[User_ID]"
+                      name="User_ID" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Sales_stg tbl\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[SalesStg]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Sales_stg tbl\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-8THTS28.VedioGames_Stg]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-8THTS28.VedioGames_Stg]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Sales_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Sales_ID"
+                      externalMetadataColumnId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sales_ID]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Sales_ID]" />
+                    <inputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Game_Name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Game_Name"
+                      externalMetadataColumnId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Game_Name]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Game_Name]" />
+                    <inputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Total_Shipped]"
+                      cachedDataType="r8"
+                      cachedName="Total_Shipped"
+                      externalMetadataColumnId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_Shipped]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Total_Shipped]" />
+                    <inputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Global_Sales]"
+                      cachedDataType="r8"
+                      cachedName="Global_Sales"
+                      externalMetadataColumnId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Global_Sales]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Global_Sales]" />
+                    <inputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NA_Sales]"
+                      cachedDataType="r8"
+                      cachedName="NA_Sales"
+                      externalMetadataColumnId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NA_Sales]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[NA_Sales]" />
+                    <inputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PAL_Sales]"
+                      cachedDataType="r8"
+                      cachedName="PAL_Sales"
+                      externalMetadataColumnId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PAL_Sales]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[PAL_Sales]" />
+                    <inputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[JP_Sales]"
+                      cachedDataType="r8"
+                      cachedName="JP_Sales"
+                      externalMetadataColumnId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JP_Sales]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[JP_Sales]" />
+                    <inputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Other_Sales]"
+                      cachedDataType="r8"
+                      cachedName="Other_Sales"
+                      externalMetadataColumnId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Other_Sales]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Other_Sales]" />
+                    <inputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Game_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Game_ID"
+                      externalMetadataColumnId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Game_ID]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Game_ID]" />
+                    <inputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Developer_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Developer_ID"
+                      externalMetadataColumnId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Developer_ID]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Developer_ID]" />
+                    <inputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[User_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="User_ID"
+                      externalMetadataColumnId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[User_ID]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[User_ID]" />
+                    <inputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Rating_ID]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Rating_ID"
+                      externalMetadataColumnId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rating_ID]"
+                      lineageId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output].Columns[Rating_ID]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sales_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Sales_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Game_Name]"
+                      dataType="wstr"
+                      length="255"
+                      name="Game_Name" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_Shipped]"
+                      dataType="r8"
+                      name="Total_Shipped" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Global_Sales]"
+                      dataType="r8"
+                      name="Global_Sales" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NA_Sales]"
+                      dataType="r8"
+                      name="NA_Sales" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PAL_Sales]"
+                      dataType="r8"
+                      name="PAL_Sales" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[JP_Sales]"
+                      dataType="r8"
+                      name="JP_Sales" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Other_Sales]"
+                      dataType="r8"
+                      name="Other_Sales" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Game_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Game_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Developer_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Developer_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[User_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="User_ID" />
+                    <externalMetadataColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Rating_ID]"
+                      dataType="wstr"
+                      length="255"
+                      name="Rating_ID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Sales_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Sales_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Sales_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Sales_stg tbl\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Sales_stg tbl.Paths[Excel Source Output]"
+              endId="Package\Sales_stg tbl\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Sales_stg tbl\Excel Source.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{4833FE83-B150-4E11-86C6-2F0E760F8FB6}"
+      DTS:From="Package\Higest_score stg tbl"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Rating_stg tbl" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{E2B60E80-E163-41D4-8857-2F46F2CDD07C}"
+      DTS:From="Package\Rating_stg tbl"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Sales_stg tbl" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{DBCEB97C-9CC8-4926-9218-4636A2E2519D}"
+      DTS:From="Package\Sales_stg tbl"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Developer_stg tbl" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{FE20FDCD-663E-41F9-986D-BB6E156FE917}"
+      DTS:From="Package\Developer_stg tbl"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Games_stg tbl new" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="160.8,41.6"
+          Id="Package\Developer_stg tbl"
+          TopLeft="227.619051495377,234.101964067505" />
+        <NodeLayout
+          Size="168.8,41.6"
+          Id="Package\Games_stg tbl new"
+          TopLeft="273.777782440185,301.803925801314" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Higest_score stg tbl"
+          TopLeft="53.3333342415947,17.6392159336578" />
+        <NodeLayout
+          Size="144,41.6"
+          Id="Package\Rating_stg tbl"
+          TopLeft="129.142859342147,89.9294130259318" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Sales_stg tbl"
+          TopLeft="189.587304815954,163.341178761386" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="138.933334241595,59.2392159336578">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="62.2095251005526,30.690197092274"
+              Start="0,0"
+              End="62.2095251005526,23.190197092274">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.345098546137" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.345098546137"
+                    Point2="0,15.345098546137"
+                    Point3="4,15.345098546137" />
+                  <mssgle:LineSegment
+                    End="58.2095251005526,15.345098546137" />
+                  <mssgle:CubicBezierSegment
+                    Point1="58.2095251005526,15.345098546137"
+                    Point2="62.2095251005526,15.345098546137"
+                    Point3="62.2095251005526,19.345098546137" />
+                  <mssgle:LineSegment
+                    End="62.2095251005526,23.190197092274" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="201.142859342147,131.529413025932">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="57.6444454738072,31.8117657354543"
+              Start="0,0"
+              End="57.6444454738072,24.3117657354543">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.9058828677272" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.9058828677272"
+                    Point2="0,15.9058828677272"
+                    Point3="4,15.9058828677272" />
+                  <mssgle:LineSegment
+                    End="53.6444454738072,15.9058828677272" />
+                  <mssgle:CubicBezierSegment
+                    Point1="53.6444454738072,15.9058828677272"
+                    Point2="57.6444454738072,15.9058828677272"
+                    Point3="57.6444454738072,19.9058828677272" />
+                  <mssgle:LineSegment
+                    End="57.6444454738072,24.3117657354543" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="258.787304815954,204.941178761386">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="49.2317466794224,29.1607853061193"
+              Start="0,0"
+              End="49.2317466794224,21.6607853061193">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,10.5803926530596" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,10.5803926530596"
+                    Point2="0,14.5803926530596"
+                    Point3="4,14.5803926530596" />
+                  <mssgle:LineSegment
+                    End="45.2317466794224,14.5803926530596" />
+                  <mssgle:CubicBezierSegment
+                    Point1="45.2317466794224,14.5803926530596"
+                    Point2="49.2317466794224,14.5803926530596"
+                    Point3="49.2317466794224,18.5803926530596" />
+                  <mssgle:LineSegment
+                    End="49.2317466794224,21.6607853061193" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="308.019051495377,275.701964067505">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="50.1587309448083,26.1019617338081"
+              Start="0,0"
+              End="50.1587309448083,18.6019617338081">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.05098086690407" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.05098086690407"
+                    Point2="0,13.0509808669041"
+                    Point3="4,13.0509808669041" />
+                  <mssgle:LineSegment
+                    End="46.1587309448083,13.0509808669041" />
+                  <mssgle:CubicBezierSegment
+                    Point1="46.1587309448083,13.0509808669041"
+                    Point2="50.1587309448083,13.0509808669041"
+                    Point3="50.1587309448083,17.0509808669041" />
+                  <mssgle:LineSegment
+                    End="50.1587309448083,18.6019617338081" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Developer_stg tbl">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Developer_stg tbl\OLE DB Destination"
+          TopLeft="460.8,216.8" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Developer_stg tbl\Flat File Source"
+          TopLeft="344.8,65.6" />
+        <EdgeLayout
+          Id="Package\Developer_stg tbl.Paths[Flat File Source Output]"
+          TopLeft="420,107.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="126,109.6"
+              Start="0,0"
+              End="126,102.1">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.8" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,50.8"
+                    Point2="0,54.8"
+                    Point3="4,54.8" />
+                  <mssgle:LineSegment
+                    End="122,54.8" />
+                  <mssgle:CubicBezierSegment
+                    Point1="122,54.8"
+                    Point2="126,54.8"
+                    Point3="126,58.8" />
+                  <mssgle:LineSegment
+                    End="126,102.1" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Developer_stg tbl.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="169.6,41.6"
+          Id="Package\Developer_stg tbl.EventHandlers[OnPreExecute]\truncate_developer"
+          TopLeft="383.2,173.6" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Developer_stg tbl\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Games_stg tbl new">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Games_stg tbl new\OLE DB Destination"
+          TopLeft="428.8,199.2" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Games_stg tbl new\Excel Source"
+          TopLeft="324.8,47.2" />
+        <EdgeLayout
+          Id="Package\Games_stg tbl new.Paths[Excel Source Output]"
+          TopLeft="394,88.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="120,110.4"
+              Start="0,0"
+              End="120,102.9">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,51.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,51.2"
+                    Point2="0,55.2"
+                    Point3="4,55.2" />
+                  <mssgle:LineSegment
+                    End="116,55.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="116,55.2"
+                    Point2="120,55.2"
+                    Point3="120,59.2" />
+                  <mssgle:LineSegment
+                    End="120,102.9" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Games_stg tbl new.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Games_stg tbl new.EventHandlers[OnPreExecute]\Truncate Games tbl"
+          TopLeft="354.4,81.6" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Games_stg tbl new\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Games_stg tbl new\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Higest_score stg tbl">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Higest_score stg tbl\OLE DB Destination"
+          TopLeft="322.857148355367,146.823531470909" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Higest_score stg tbl\Excel Source"
+          TopLeft="198.4,23.2" />
+        <EdgeLayout
+          Id="Package\Higest_score stg tbl.Paths[Excel Source Output]"
+          TopLeft="267.6,64.8">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="140.457148355367,82.0235314709089"
+              Start="0,0"
+              End="140.457148355367,74.5235314709089">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.0117657354544" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.0117657354544"
+                    Point2="0,41.0117657354544"
+                    Point3="4,41.0117657354544" />
+                  <mssgle:LineSegment
+                    End="136.457148355367,41.0117657354544" />
+                  <mssgle:CubicBezierSegment
+                    Point1="136.457148355367,41.0117657354544"
+                    Point2="140.457148355367,41.0117657354544"
+                    Point3="140.457148355367,45.0117657354544" />
+                  <mssgle:LineSegment
+                    End="140.457148355367,74.5235314709089" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Higest_score stg tbl.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="199.2,41.6"
+          Id="Package\Higest_score stg tbl.EventHandlers[OnPreExecute]\Truncate Higest_score tbl"
+          TopLeft="259.2,52.8" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Higest_score stg tbl\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Higest_score stg tbl\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Rating_stg tbl">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Rating_stg tbl\OLE DB Destination"
+          TopLeft="330.4,235.2" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Rating_stg tbl\Excel Source"
+          TopLeft="248.8,69.6" />
+        <EdgeLayout
+          Id="Package\Rating_stg tbl.Paths[Excel Source Output]"
+          TopLeft="318,111.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="97.6,124"
+              Start="0,0"
+              End="97.6,116.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,58" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,58"
+                    Point2="0,62"
+                    Point3="4,62" />
+                  <mssgle:LineSegment
+                    End="93.6,62" />
+                  <mssgle:CubicBezierSegment
+                    Point1="93.6,62"
+                    Point2="97.6,62"
+                    Point3="97.6,66" />
+                  <mssgle:LineSegment
+                    End="97.6,116.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Rating_stg tbl.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="151.2,41.6"
+          Id="Package\Rating_stg tbl.EventHandlers[OnPreExecute]\truncate Rating"
+          TopLeft="376.8,97.6" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Rating_stg tbl\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Rating_stg tbl\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Sales_stg tbl">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Sales_stg tbl\OLE DB Destination"
+          TopLeft="374.4,232" />
+        <NodeLayout
+          Size="138.4,41.6"
+          Id="Package\Sales_stg tbl\Excel Source"
+          TopLeft="300,81.6" />
+        <EdgeLayout
+          Id="Package\Sales_stg tbl.Paths[Excel Source Output]"
+          TopLeft="369.2,123.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="90.4,108.8"
+              Start="0,0"
+              End="90.4,101.3">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.4" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,50.4"
+                    Point2="0,54.4"
+                    Point3="4,54.4" />
+                  <mssgle:LineSegment
+                    End="86.4,54.4" />
+                  <mssgle:CubicBezierSegment
+                    Point1="86.4,54.4"
+                    Point2="90.4,54.4"
+                    Point3="90.4,58.4" />
+                  <mssgle:LineSegment
+                    End="90.4,101.3" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Sales_stg tbl.EventHandlers[OnPreExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="148.8,41.6"
+          Id="Package\Sales_stg tbl.EventHandlers[OnPreExecute]\Truncate_sales"
+          TopLeft="380.8,134.4" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sales_stg tbl\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sales_stg tbl\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
